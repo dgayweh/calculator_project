@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" type="text/css" href="./cal.css">
+</head>
+<body>
+  <div class="frame">
+    <input type="text" id="output" readonly>
+    <table>
+      <tr>
+        <td><button onclick="append_value('1')">1</button></td>
+        <td><button onclick="append_value('2')">2</button></td>
+        <td><button onclick="append_value('3')">3</button></td>
+        <td><button onclick="append_value('-')">-</button></td>
+
+      </tr>
+      <tr>
+        <td><button onclick="append_value('4')">4</button></td>
+        <td><button onclick="append_value('5')">5</button></td>
+        <td><button onclick="append_value('6')">6</button></td>
+        <td><button onclick="append_value('*')">*</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="append_value('7')">7</button></td>
+        <td><button onclick="append_value('8')">8</button></td>
+        <td><button onclick="append_value('9')">9</button></td>
+        <td><button onclick="append_value('/')">/</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="append_value('0')">0</button></td>
+        <td><button onclick="append_value('.')">.</button></td>
+        <td><button onclick="calculate(); show_alert()">=</button></td>
+        <td><button onclick="append_value('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="delete_Last_character()">Del</button></td>
+        <td  colspan="3"><button onclick="clear_output()">C</button></td>
+        
+      </tr>
+    </table>
+  </div>
+  
+  <script src="./cal.js"></script>
+</body>
+</html>
